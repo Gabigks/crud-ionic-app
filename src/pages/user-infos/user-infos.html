@@ -1,0 +1,14 @@
+<ion-content padding>
+
+  <my-header title="User Infos"></my-header>
+
+  <ion-card class="card">
+    <img [src]="user.picture"/>
+    <ion-card-content>
+      <ion-card-title>
+        {{ user.name }}
+        </ion-card-title>
+      <p> {{ user.birthdate }} </p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
