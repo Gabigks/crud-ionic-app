@@ -1,6 +1,8 @@
+<ion-header>
+  <my-header title="Lista"></my-header> 
+</ion-header>
 <ion-content>
-  <my-header title="List"></my-header>
-
+  <div>
   <ion-list>
     <button ion-item *ngFor="let user of users" (click)="userTapped($event, user)">
       <ion-icon [name]="person" item-start></ion-icon>
@@ -10,5 +12,6 @@
       </ion-label>
     </button>
   </ion-list>
+  </div>  
 
 </ion-content>
